@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Location  View</title>
+
+</head>
+<body>
+<h1>Manage Locations</h1>
+
+<ol>
+<li th:each="location:${locations}">
+<span th:text="${location.name}">Default</span>
+</li>
+</0l>
+
+<tr>
+<a th:href="@{/addlocations}">Add Locations</a>
+</tr>
+</body>
+</html>
+
+
+
+

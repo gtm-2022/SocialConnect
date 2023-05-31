@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>DashBoard View</title>
+
+</head>
+<body>
+<h1>welcome to social networking</h1>
+<div>
+<table>
+
+<tr>
+<td>
+
+<a th:href="@{/users}">View All User</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<a th:href="@{/addusers}">Add User</a>
+</td>
+
+</tr>
+
+<tr>
+<td>
+<a th:href="@{/locations}">View all Location</a>
+</td>
+</tr>
+
+</table>
+</div>
+</body>
+</html>
